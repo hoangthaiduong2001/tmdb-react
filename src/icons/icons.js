@@ -1,9 +1,10 @@
 import { GrAdd } from 'react-icons/gr'
-import { FaSearch } from 'react-icons/fa'
+import { FaSearch, FaPlus } from 'react-icons/fa' 
 
 const icons = {
     GrAdd,
     FaSearch,
+    FaPlus
 }
 
 export default icons
