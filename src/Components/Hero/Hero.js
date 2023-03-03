@@ -9,13 +9,13 @@ const Hero = () => {
         <img src={bg_search} style={{width: '1300px', height: '300px'}} className='object-cover opacity-90'/>
       </div>
       <div className='absolute flex flex-col gap-8 px-[40px] py-[30px] max-w-[1300px] w-full'>
-        <div className='text-white w-full'>
-          <h2 className='text-[48px]'>Welcome.</h2>
-          <h3 className='text-[32px]'>Millions of movies, TV shows and people to discover. Explore now.</h3>
+        <div className='text-white'>
+          <h2 className='text-[48px] font-semibold'>Welcome.</h2>
+          <h3 className='text-[32px] font-semibold'>Millions of movies, TV shows and people to discover. Explore now.</h3>
         </div>
-        <div className='flex justify-between w-full'>
-          <input type='text' placeholder='Search for a movie, tv show, person......' className='rounded-[30px] w-full'/>
-          <button>Search</button>
+        <div className='flex'>
+          <input type='text' placeholder='Search for a movie, tv show, person......' className='rounded-[30px] w-full px-[20px] py-[10px] outline-none'/>
+          <button className='text-white py-[10x] px-[26px] rounded-[30px] border border-red-400'>Search</button>
         </div>
       </div>
     </div>

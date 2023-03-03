@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from '../../Asset/logo.png'
 import icons from '../../icons/icons'
 
+
+
 const { FaPlus, FaSearch} = icons
 
 const Header = () => {
