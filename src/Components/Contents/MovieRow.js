@@ -12,17 +12,16 @@ const MovieRow = () => {
   useEffect(() => {
     dispatch(actions.getTrendingMovies());
   }, []);
-  console.log(TrendingMovies);
+  // console.log(TrendingMovies);
   return (
     <div className="flex flex-col">
       <img  src={bg_trending} className="relative pt-[100px]"/>
       <div className="flex gap-4 absolute px-10">
         {TrendingMovies?.filter((item, index) => index < 7 )?.map((item) => (     
-          <div className="">
+          <div className="" key={item?.id}>
             <img
               style={{ width: "155px", height: "255px" }}
               src={`http://image.tmdb.org/t/p/original/${item?.backdrop_path}`}
-              key={item?.id}
               className="object-cover rounded-md"
             />
             <div className="max-w-[160px] flex flex-col">
