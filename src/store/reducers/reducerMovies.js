@@ -5,12 +5,12 @@ const reducerMoviesInitialState = {
     MovieDetail: null,
     SearchMovies: null,
     LatestMovies: null,
+    VideoMovies: null
 }
 const reducerMovies = (state = reducerMoviesInitialState, action) => {
     const {type, payload} = action;
     switch(type){
-        
-        
+          
         case Types.GET_TRENDING_MOVIES:
             return {...state, TrendingMovies: payload}
           
@@ -22,6 +22,9 @@ const reducerMovies = (state = reducerMoviesInitialState, action) => {
 
         case Types.GET_SEARCH_MOVIES:
             return {...state, LatestMovies: payload}
+
+        case Types.GET_VIDEO_MOVIES:
+            return {...state, VideoMovies: payload}
         default:
             return state
     }
