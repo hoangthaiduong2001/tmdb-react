@@ -15,7 +15,7 @@ const Hero = () => {
         </div>
         <div className='flex'>
           <input type='text' placeholder='Search for a movie, tv show, person......' className='rounded-[30px] w-full px-[20px] py-[10px] outline-none'/>
-          <button className='text-white py-[10x] px-[26px] rounded-[30px] border border-red-400'>Search</button>
+          <button className='text-white py-[10px] px-[26px] mx-6 rounded-[30px] bg-[rgb(21,202,189)]'>Search</button>
         </div>
       </div>
     </div>

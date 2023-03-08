@@ -43,14 +43,27 @@ export const getLatestMovies = () => async dispatch => {
     }
 }
 
-export const getVideoMovies = (keywords) => async dispatch => {
+export const getVideoMovies = () => async dispatch => {
     try {
         const result = await axios.get(
-            `${BASE_URL}movie/${keywords}/videos?api_key=${API_KEY}&language=en-US`
+            `${BASE_URL}/movie/539885/videos?api_key=${API_KEY}&language=en-US`
         );
         dispatch({type: Types.GET_VIDEO_MOVIES, payload: result.data.results});
     } catch (error) {
         console.log(' Get Latest API error: ', error);
     }
 }
+
+export const getComedyMovies = () => async dispatch => {
+    try {
+        const result = await axios.get(
+            `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=35`
+        );
+        dispatch({type: Types.GET_COMEDY_MOVIES, payload: result.data.results});
+    } catch (error) {
+        
+    }
+}
+
+
 
